@@ -4,9 +4,9 @@ Dapper / Contrib test repo
 ## Exemplo com Procedure
 
 ```sql
-CREATE PROCEDURE dbo.PRC_SEL_DETALHES_ESTADO
-(
-	@CodEstado char(2)
+CREATE PROCEDURE dbo.PRC_SEL_DETALHES_ESTADO --- Declarando o nome da procedure
+( 
+	@CodEstado char(2) --- Declarando variável (note que utilizamos o @ antes do nome da variável)
 )
 AS
 BEGIN

@@ -3,6 +3,7 @@ Dapper / Contrib test repo
 
 ## Exemplo com Procedure
 
+```sql
 CREATE PROCEDURE dbo.PRC_SEL_DETALHES_ESTADO
 (
 	@CodEstado char(2)
@@ -15,8 +16,8 @@ BEGIN
 	FROM dbo.Estados E
 	INNER JOIN dbo.Regioes R ON R.IdRegiao = E.IdRegiao
 	WHERE E.SiglaEstado = @CodEstado
-
 END
+```
 
 ```c#
 // exemplo buscando de uma stored procedure
@@ -34,3 +35,4 @@ public Estado GetDetalhesEstadoProcedure(string siglaEstado)
             commandType: CommandType.StoredProcedure);
     }
 }
+```

@@ -18,7 +18,7 @@ BEGIN
 
 END
 
-
+```c#
 // exemplo buscando de uma stored procedure
 public Estado GetDetalhesEstadoProcedure(string siglaEstado)
 {
